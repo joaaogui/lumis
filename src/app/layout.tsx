@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const metadata: Metadata = {
+import mixpanel from "mixpanel-browser";
+import { Dancing_Script, Montserrat } from "next/font/google";
+export const metadata: Metadata = {
   title: "Lumis",
   description: "Clinica de Estética",
 };
-
-import { Dancing_Script, Montserrat } from "next/font/google";
-
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
@@ -22,6 +21,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log("oi");
+  mixpanel.init("c438ed2f6456d62361cb08a5eb1042db", {
+    debug: true,
+    track_pageview: true,
+    persistence: "localStorage",
+  });
+  mixpanel.identify("HAHAHAH");
+  mixpanel.track("Page View OI");
+
   return (
     <html lang="en">
       <body

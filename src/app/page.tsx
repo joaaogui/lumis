@@ -6,17 +6,30 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-6 sm:p-12 lg:p-24 bg-white">
 
-      <header className="bg-dark-pink text-dark-pink py-12">
+      <header className="bg-dark-pink text-dark-pink py-12 " style={{
+        width: '100%',
+        textAlign: 'left',
+        height: '400px',
+          backgroundImage: 'url(/woman.png)',
+          backgroundSize: 'contain',  
+          backgroundPosition: ' right ', // Align image to the right and center it vertically
+          backgroundRepeat: 'no-repeat',
+
+        }}>
+        <div >
+
         <div className="container mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-heading mb-4">Bem-vindo à Lumis Clínica de Beleza</h1>
         <p className="text-lg md:text-xl mb-8">Realçando sua Beleza Natural com Cuidados Profissionais</p>
           <a href="#contact" className="bg-white text-dark-pink py-2 px-6 rounded-lg font-semibold text-lg">Agende uma Consulta</a>
         </div>
-      </header>
+        </div>
+
+        </header>
 
       <section id="services" className="py-12">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-dark-pink">Nossos Serviços</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-dark-pink">Nossos Serviços</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Tratamentos Faciais</h3>
@@ -36,7 +49,7 @@ export default function Home() {
 
       <section id="testimonials" className="bg-dark-pink text-white py-12">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">O que Nossos Clientes Dizem</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-8">O que Nossos Clientes Dizem</h2>
           <div className="flex flex-col md:flex-row justify-around">
             <div className="bg-white text-dark-pink p-6 rounded-lg shadow-lg mb-6 md:mb-0 md:w-1/3">
               <p>O tratamento facial foi incrível! Minha pele nunca esteve tão fresca e suave.</p>
@@ -56,7 +69,7 @@ export default function Home() {
 
       <section id="contact" className="py-12">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-dark-pink">Entre em Contato</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-dark-pink">Entre em Contato</h2>
           <form className="bg-white p-8 rounded-lg shadow-lg mx-auto max-w-lg">
             <label htmlFor="name" className="block text-left mb-4 text-lg font-semibold">Nome</label>
             <input type="text" id="name" className="w-full p-3 border border-gray-300 rounded-lg mb-4" required />

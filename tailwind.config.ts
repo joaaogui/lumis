@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['Dancing Script', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        body: ['var(--font-montserrat )'],
+        heading: ['var(--font-dancing-script)'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

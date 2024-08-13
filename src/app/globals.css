@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define custom properties */
+:root {
+  --light-pink: #f8d9e2;
+  --dark-pink: #f4a8b1;
+}
+
+/* Tailwind Custom Classes */
+.bg-light-pink {
+  background-color: var(--light-pink);
+}
+.text-dark-pink {
+  color: var(--dark-pink);
+}
+
+/* Dark Mode Custom Styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-color: #ffffff;
+    --background-start-color: #000000;
+    --background-end-color: #000000;
+  }
+  
+  body {
+    color: var(--foreground-color);
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(
+        to bottom,
+        rgba(var(--background-end-color), 0.5),
+        var(--background-start-color)
+      );
+  }
+}
+
+/* Utility for Text Balance */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

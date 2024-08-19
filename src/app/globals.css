@@ -5,15 +5,18 @@
 /* Define custom properties */
 :root {
   --light-pink: #f8d9e2;
-  --dark-pink: #f4a8b1;
+  --primary: #006a4e;
+  --secondary: #d4af37;
+  --black: #1c1c1c;
+  --white: #f5f5f5;
 }
 
 /* Tailwind Custom Classes */
 .bg-light-pink {
   background-color: var(--light-pink);
 }
-.text-dark-pink {
-  color: var(--dark-pink);
+.text-primary {
+  color: var(--primary);
 }
 
 /* Dark Mode Custom Styles */

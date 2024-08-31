@@ -1,14 +1,14 @@
 import { Flex } from "@/components/flex";
 import { titleClass } from "./classes";
-import { ServiceTitleSection } from "./service-title-section";
-import { ServicesImages } from "./services-images";
-import { SpecialServiceItem } from "./special-service-item";
+import { ServiceTitleSection } from "./services/service-title-section";
+import { ServicesImages } from "./services/services-images";
+import { SpecialServiceItem } from "./services/special-service-item";
 
 export const Services = () => {
   const serviceSectionClass = "flex-col max-w-96 ";
 
   return (
-    <section id="services" className="my-12 pl-10 w-full">
+    <section id="services" className="my-12 pl-10 w-full text-primary">
       <h2 className={titleClass}>Nossos Serviços</h2>
       <Flex>
         <Flex className="w-2/3 justify-center gap-4">

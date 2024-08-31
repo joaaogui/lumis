@@ -6,8 +6,8 @@ export const Navbar = () => {
       className="bg-primary text-primary py-4 mb-4 h-20 px-10
     container mx-auto flex justify-between items-center w-full"
     >
-      <a href="/" className="font-semibold font-heading text-4xl">
-        Lumis
+      <a href="/" className="font-semibold font-heading text-4xl ">
+        lumis
       </a>
       <ul className="flex space-x-8 font-bold text-base">
         <li>

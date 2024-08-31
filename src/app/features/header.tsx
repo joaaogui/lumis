@@ -12,7 +12,7 @@ export const Header = () => {
         width: "100%",
       }}
     >
-      <Flex className="container px-24 h-64 flex-col justify-center">
+      <Flex className="container px-24 h-80 flex-col justify-center">
         <div className="flex flex-col ml-2 ">
           <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
             Lumis Estética

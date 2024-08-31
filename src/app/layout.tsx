@@ -2,26 +2,26 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import mixpanel from "mixpanel-browser";
-import { Dancing_Script, Montserrat } from "next/font/google";
+import { Open_Sans, Sacramento } from "next/font/google";
 export const metadata: Metadata = {
-  title: "Lumis",
-  description: "Clinica de Estética",
+  title: "lumis",
+  description: "Clinica de estética",
 };
-const montserrat = Montserrat({
+const montserrat = Open_Sans({
   subsets: ["latin"],
   variable: "--font-montserrat",
 });
 
-const dancingScript = Dancing_Script({
+const dancingScript = Sacramento({
   subsets: ["latin"],
   variable: "--font-dancing-script",
+  weight: "400",
 });
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log("oi");
   mixpanel.init("c438ed2f6456d62361cb08a5eb1042db", {
     debug: true,
     track_pageview: true,

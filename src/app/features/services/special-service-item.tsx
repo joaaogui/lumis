@@ -9,7 +9,7 @@ export const SpecialServiceItem = ({
   description: string;
 }) => {
   return (
-    <Flex className="flex-col">
+    <Flex className="flex-col mb-2">
       <Flex className="items-center gap-2">
         <FaStar color="gold" />
         <p className="text-lg font-bold">{label}</p>

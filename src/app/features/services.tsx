@@ -1,77 +1,88 @@
-import { card, titleClass } from "./classes";
+import { Flex } from "@/components/flex";
+import { titleClass } from "./classes";
+import { ServiceTitleSection } from "./service-title-section";
+import { ServicesImages } from "./services-images";
+import { SpecialServiceItem } from "./special-service-item";
 
 export const Services = () => {
+  const serviceSectionClass = "flex-col max-w-96 ";
+
   return (
-    <section id="services" className="py-12">
-      <div className="container mx-auto ">
-        <h2 className={titleClass}>Nossos Serviços</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className={card}>
-            <h3 className="text-xl text-primary font-semibold mb-4">
-              Tratamentos Faciais
-            </h3>
-            <p>
-              Revitalize sua pele com nossos tratamentos faciais luxuosos
-              projetados para nutrir e refrescar seu semblante.
-            </p>
-          </div>
-          <div className={card}>
-            <h3 className="text-xl text-primary font-semibold mb-4">
-              Contorno Corporal
-            </h3>
-            <p>
-              Alcance a forma corporal desejada com nossas soluções avançadas de
-              contorno corporal que esculpem e tonificam.
-            </p>
-          </div>
-          <div className={card}>
-            <h3 className="text-xl text-primary font-semibold mb-4">
-              Remoção de Pelos
-            </h3>
-            <p>
-              Experimente uma pele suave e livre de pelos com nossos tratamentos
-              de remoção de pelos seguros e eficazes.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col mt-4">
-          <div className="flex justify-center gap-4">
-            <div className={card}>
-              <strong className="text-primary">FACIAL</strong>
-              <ul>
-                <li>Limpeza de pele</li>
-                <li>Peeling químico</li>
-                <li>Peeling de diamante</li>
-                <li>Drenagem facial</li>
-                <li>Drenagem facial pós operatória</li>
-                <li>Hidratação facial</li>
-                <li>Radiofrequência facial</li>
-                <li>Microagulhamento</li>
-              </ul>
-            </div>
-            <div className={card}>
-              <strong className="text-primary">CORPORAL</strong>
-              <ul>
-                <li>Drenagem linfática</li>
-                <li>Massagem gestacional</li>
-                <li>Massagem pós operatória</li>
-                <li>Enzima para gordura localizada e flacidez</li>
-                <li>Harmonização corporal (criolipólise aparelho)</li>
-                <li>
-                  <strong className="text-primary">Aparelhos</strong>
-                  <ul>
-                    <li>Ultrassom</li>
-                    <li>Corrente russa</li>
-                    <li>Radiofrequência</li>
-                    <li>Endermologia</li>
-                  </ul>
-                </li>
-                <li>Hidrolipoclasia não aspirativa</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section id="services" className="my-12 pl-10 w-full">
+      <h2 className={titleClass}>Nossos Serviços</h2>
+      <Flex>
+        <Flex className="w-2/3 justify-center gap-4">
+          <Flex className={serviceSectionClass}>
+            <ServiceTitleSection
+              title="Tratamentos Faciais"
+              icon="/icons/facial.png"
+            />
+            <Flex className="flex-col mt-6">
+              <SpecialServiceItem
+                label="Limpeza de pele"
+                description="Tratamento essencial que remove impurezas, desobstrui os poros e renova a vitalidade da pele."
+              />
+
+              <SpecialServiceItem
+                label="Peeling de diamante"
+                description="Esfoliação avançada que suaviza a pele, removendo células mortas e promovendo uma textura mais uniforme."
+              />
+
+              <SpecialServiceItem
+                label="Drenagem facial"
+                description="Técnica de massagem que reduz o inchaço, melhora a circulação e deixa a pele mais firme e tonificada."
+              />
+              <p className="font-bold">E mais: </p>
+              <p>Peeling químico</p>
+              <p>Drenagem facial pós operatória</p>
+              <p>Hidratação facial</p>
+              <p>Radiofrequência facial</p>
+              <p>Microagulhamento</p>
+            </Flex>
+          </Flex>
+          <Flex className={serviceSectionClass}>
+            <ServiceTitleSection
+              title="Tratamentos Corporais"
+              icon="/icons/massage.png"
+            />
+            <Flex className="flex-col mt-6">
+              <SpecialServiceItem
+                label="Drenagem Linfática"
+                description="Massagem suave que melhora a circulação e ajuda a eliminar toxinas, reduzindo inchaços e promovendo bem-estar."
+              />
+
+              <SpecialServiceItem
+                label="Harmonização Corporal (Criolipólise)"
+                description="Tratamento que congela e elimina a gordura localizada, redefinindo o contorno corporal sem cirurgia."
+              />
+
+              <SpecialServiceItem
+                label="Radiofrequência"
+                description="Tecnologia que aquece a pele para estimular colágeno, melhorando a firmeza e combatendo flacidez e celulite."
+              />
+              <p className="font-bold">E mais: </p>
+              <p>Massagem gestacional</p>
+              <p>Massagem pós operatória</p>
+              <p>Enzima para gordura localizada e flacidez</p>
+              <p>Hidrolipoclasia não aspirativa</p>
+
+              <Flex className="flex-col pt-4">
+                <ServiceTitleSection
+                  title="Aparelhos"
+                  icon="/icons/device.png"
+                  size={36}
+                />
+                <Flex className="flex-col mt-4">
+                  <p>Ultrassom</p>
+                  <p>Corrente russa</p>
+                  <p>Endermologia</p>
+                </Flex>
+              </Flex>
+            </Flex>
+          </Flex>
+        </Flex>
+        <ServicesImages className="w-1/3" />
+      </Flex>
     </section>
   );
 };

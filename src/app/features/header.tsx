@@ -3,7 +3,7 @@ import { Flex } from "@/components/flex";
 export const Header = () => {
   return (
     <header
-      className="bg-primary text-primary py-12 w-full "
+      className="bg-primary text-primary py-12 w-full mb-10"
       style={{
         backgroundImage: "url(/spa.jpg)",
         backgroundSize: "cover",

@@ -5,6 +5,7 @@ import { Footer } from "./features/footer";
 import { Header } from "./features/header";
 import { Navbar } from "./features/navbar";
 import { Services } from "./features/services";
+import { WhatsAppButton } from "./features/whatsapp";
 
 export default function Home() {
   return (
@@ -16,6 +17,11 @@ export default function Home() {
       <About />
       <Contact />
       <Footer />
+      <WhatsAppButton
+        phoneNumber="1234567890" // Replace with your phone number
+        message="Hello, I have a question about your services."
+        style={{ fontSize: "16px" }}
+      />
     </Flex>
   );
 }

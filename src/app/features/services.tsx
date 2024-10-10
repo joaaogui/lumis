@@ -8,11 +8,11 @@ export const Services = () => {
   const serviceSectionClass = "flex-col max-w-96 ";
 
   return (
-    <section id="services" className="my-12 pl-10 w-full text-primary">
+    <section id="services" className="my-12 px-4 md:px-10 w-full text-primary">
       <h2 className={titleClass}>Nossos Serviços</h2>
-      <Flex className="items-center justify-center w-full">
-        <Flex className="w-2/3 justify-center gap-4">
-          <Flex className={serviceSectionClass}>
+      <Flex className="flex-col md:flex-row items-center justify-center w-full">
+        <Flex className="w-full md:w-2/3 flex-col md:flex-row justify-center gap-4">
+          <Flex className={`${serviceSectionClass} w-full md:w-1/2`}>
             <ServiceTitleSection
               title="Tratamentos Faciais"
               icon="/icons/facial.png"
@@ -40,7 +40,8 @@ export const Services = () => {
               <p>Microagulhamento</p>
             </Flex>
           </Flex>
-          <Flex className={serviceSectionClass}>
+
+          <Flex className={`${serviceSectionClass} w-full md:w-1/2`}>
             <ServiceTitleSection
               title="Tratamentos Corporais"
               icon="/icons/massage.png"
@@ -81,7 +82,8 @@ export const Services = () => {
             </Flex>
           </Flex>
         </Flex>
-        <Flex className="w-1/3">
+
+        <Flex className="w-full md:w-1/3 mt-6 md:mt-0">
           <ServicesImages />
         </Flex>
       </Flex>

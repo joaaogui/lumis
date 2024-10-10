@@ -9,7 +9,7 @@ export const Navbar = () => {
       <a href="/" className=" font-heading text-5xl ">
         Lumis
       </a>
-      <ul className="flex space-x-8 font-bold text-base">
+      <ul className="flex space-x-2 lg:space-x-8 font-bold text-base">
         <li>
           <a href="#services">Serviços</a>
         </li>

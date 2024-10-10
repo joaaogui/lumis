@@ -20,8 +20,8 @@ export default function Home() {
       <Contact />
       <Footer />
       <WhatsAppButton
-        phoneNumber="1234567890" // Replace with your phone number
-        message="Hello, I have a question about your services."
+        phoneNumber="5561991919063"
+        message="Oi! Gostaria de conhecer a Lumis."
         style={{ fontSize: "16px" }}
       />
     </Flex>

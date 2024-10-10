@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <Flex
       className="bg-primary text-primary py-4 h-20 px-10
-    container mx-auto flex justify-between items-center w-full"
+    container  flex justify-between items-center w-full"
     >
       <a href="/" className=" font-heading text-5xl ">
         Lumis

@@ -1,7 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary py-6 text-center">
-      <p>&copy; 2024 lumis Clínica de Beleza. Todos os direitos reservados.</p>
+    <footer className="bg-primary text-primary mb-5 py-6 text-center">
+      &copy; {new Date().getFullYear()} Lumis Estética. Todos os direitos
+      reservados.
     </footer>
   );
 };

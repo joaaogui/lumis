@@ -3,11 +3,11 @@ import { Flex } from "@/components/flex";
 export const Navbar = () => {
   return (
     <Flex
-      className="bg-primary text-primary py-4 mb-4 h-20 px-10
+      className="bg-primary text-primary py-4 h-20 px-10
     container mx-auto flex justify-between items-center w-full"
     >
-      <a href="/" className="font-semibold font-heading text-4xl ">
-        lumis
+      <a href="/" className=" font-heading text-5xl ">
+        Lumis
       </a>
       <ul className="flex space-x-8 font-bold text-base">
         <li>

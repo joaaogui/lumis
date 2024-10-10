@@ -9,12 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        body: ['var(--font-montserrat )'],
-        heading: ['var(--font-dancing-script)'],
+        body: ["var(--font-open-sans )"],
+        special: ["var(--font-pompiere)"],
+        heading: ["var(--font-luxurious-script)"],
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },

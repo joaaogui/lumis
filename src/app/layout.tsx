@@ -2,19 +2,26 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import mixpanel from "mixpanel-browser";
-import { Open_Sans, Sacramento } from "next/font/google";
+import { Luxurious_Script, Open_Sans, Pompiere } from "next/font/google";
 export const metadata: Metadata = {
-  title: "lumis",
-  description: "Clinica de estética",
+  title: "Lumis",
+  description: "Estética",
 };
-const montserrat = Open_Sans({
+const pompiere = Pompiere({
   subsets: ["latin"],
-  variable: "--font-montserrat",
+  variable: "--font-pompiere",
+  weight: "400",
 });
 
-const dancingScript = Sacramento({
+const luxurious = Luxurious_Script({
   subsets: ["latin"],
-  variable: "--font-dancing-script",
+  variable: "--font-luxurious-script",
+  weight: "400",
+});
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open-sans",
   weight: "400",
 });
 export default function RootLayout({
@@ -33,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dancingScript.variable} ${montserrat.variable} font-body`}
+        className={`${luxurious.variable} ${pompiere.variable} ${openSans.variable} font-body`}
         suppressHydrationWarning={true}
       >
         {children}

@@ -16,7 +16,7 @@ export default function Home() {
         <div>
           <div className="container mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-heading mb-4">
-              Bem-vindo à lumis Clínica de Beleza
+              Bem-vindo à Lumis Estética
             </h1>
             <p className="text-lg md:text-xl mb-8">
               Realçando sua Beleza Natural com Cuidados Profissionais
@@ -146,12 +146,6 @@ export default function Home() {
           </form>
         </div>
       </section>
-
-      <footer className="bg-primary text-white py-6 text-center">
-        <p>
-          &copy; 2024 lumis Clínica de Beleza. Todos os direitos reservados.
-        </p>
-      </footer>
     </main>
   );
 }

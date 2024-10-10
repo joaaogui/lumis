@@ -10,7 +10,7 @@ import { WhatsAppButton } from "./features/whatsapp";
 
 export default function Home() {
   return (
-    <Flex className="min-h-screen flex-col items-center justify-between bg-white">
+    <Flex className="min-h-screen w-full flex-col items-center justify-between bg-white">
       <Navbar />
       <Header />
       <Services />

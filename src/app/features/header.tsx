@@ -12,9 +12,9 @@ export const Header = () => {
         width: "100%",
       }}
     >
-      <Flex className="container px-10 lg:px-24 h-80 flex-col justify-center">
+      <Flex className="container px-4 sm:px-10 lg:px-24 h-80 flex-col justify-center">
         <div className="flex flex-col ml-2 ">
-          <h1 className="text-4xl md:text-5xl font-special font-bold mb-4">
+          <h1 className="text-5xl md:text-6xl font-heading  mb-4">
             Lumis Estética
           </h1>
           <p className="text-lg  mb-8">
@@ -24,7 +24,7 @@ export const Header = () => {
 
         <a
           href="#contact"
-          className="bg-white text-primary py-2 px-6 rounded-lg font-semibold text-lg w-fit"
+          className="bg-white text-primary py-2 px-6 rounded-lg font-semibold text-base w-fit"
         >
           Agende sua Consulta
         </a>

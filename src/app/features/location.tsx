@@ -7,6 +7,7 @@ import {
   Map,
   Marker,
 } from "@vis.gl/react-google-maps";
+import { titleClass } from "./classes";
 
 export const Location = () => {
   const mapContainerStyle = {
@@ -20,8 +21,8 @@ export const Location = () => {
   };
 
   return (
-    <Flex className="flex-col justify-center items-center w-full">
-      <Flex className="text-4xl md:text-5xl font-bold mb-8 ">Localização</Flex>
+    <Flex className="flex-col justify-center items-center w-full" id="location">
+      <h2 className={titleClass}>Localização</h2>
       <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ""}>
         <Map
           style={mapContainerStyle}

@@ -5,48 +5,43 @@ export const Contact = () => {
         <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-primary">
           Entre em Contato
         </h2>
-        <form className="bg-white p-8 rounded-lg shadow-lg mx-auto max-w-lg">
-          <label
-            htmlFor="name"
-            className="block text-left mb-4 text-lg font-semibold"
-          >
-            Nome
-          </label>
+        <form
+          className="bg-white p-8 rounded-lg shadow-lg mx-auto max-w-lg"
+          action="mailto:lumisestetica@gmail.com?subject=Contato%20pelo%20site"
+          method="post"
+          encType="text/plain"
+        >
+          <label htmlFor="name">Nome</label>
           <input
+            className="w-full p-3 border border-gray-300 rounded-lg mb-4"
             type="text"
             id="name"
-            className="w-full p-3 border border-gray-300 rounded-lg mb-4"
+            name="name"
             required
           />
-          <label
-            htmlFor="email"
-            className="block text-left mb-4 text-lg font-semibold"
-          >
-            Email
-          </label>
+
+          <label htmlFor="email">Email</label>
           <input
+            className="w-full p-3 border border-gray-300 rounded-lg mb-4"
             type="email"
             id="email"
-            className="w-full p-3 border border-gray-300 rounded-lg mb-4"
+            name="email"
             required
           />
-          <label
-            htmlFor="message"
-            className="block text-left mb-4 text-lg font-semibold"
-          >
-            Mensagem
-          </label>
+
+          <label htmlFor="message">Mensagem</label>
           <textarea
-            id="message"
-            rows={4}
             className="w-full p-3 border border-gray-300 rounded-lg mb-4"
+            id="message"
+            name="message"
             required
           ></textarea>
+
           <button
+            className=" px-10 py-2 bg-white rounded-md text-primary font-semibold border-primary border-2 hover:bg-primary hover:bg-gray-400 hover:text-white transition-colors duration-300"
             type="submit"
-            className="bg-primary text-white py-2 px-6 rounded-lg font-semibold text-lg"
           >
-            Enviar Mensagem
+            Enviar
           </button>
         </form>
       </div>
